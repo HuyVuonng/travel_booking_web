@@ -1,6 +1,8 @@
 import classNames from 'classnames/bind';
 import styles from './nextHoliday.module.scss';
-import { useState, useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
+import { Best_Tours, Cruises, world_tour } from '~/components/images';
+import { Link } from 'react-router-dom';
 
 const cx = classNames.bind(styles);
 
@@ -26,11 +28,13 @@ function NextHoliday() {
         IntervalID = setInterval(() => {
             const picAll = document.querySelectorAll('.pic');
             const btnchangepic = document.querySelectorAll('.change');
+            // Lấy id ảnh hiện tại
             for (let i = 0; i < picAll.length; i++) {
                 if (picAll[i].classList.contains(`${cx('activePic')}`)) {
                     idActivePic.current = picAll[i].dataset.id;
                 }
             }
+
             let currentID = Number(idActivePic.current);
             let nextID = currentID + 1;
 
@@ -40,6 +44,7 @@ function NextHoliday() {
             btnchangepic[currentID].classList.remove(`${cx('active')}`);
             picAll[currentID].classList.remove(`${cx('activePic')}`);
 
+            //gán lại current id bằng next id
             idActivePic.current = nextID;
 
             btnchangepic[nextID].classList.add(`${cx('active')}`);
@@ -49,7 +54,7 @@ function NextHoliday() {
                     picAll[j].classList.add(`${cx('activePic')}`);
                 }
             }
-        }, 5000);
+        }, 10000);
     };
 
     useEffect(() => {
@@ -63,6 +68,8 @@ function NextHoliday() {
     const Changepicture = (id) => {
         const picAll = document.querySelectorAll('.pic');
         const btnchangepic = document.querySelectorAll('.change');
+
+        // Khi click gỡ hết các class name active ở ảnh và btn
         for (var i = 0; i < btnchangepic.length; i++) {
             btnchangepic[i].classList.remove(`${cx('active')}`);
             picAll[i].classList.remove(`${cx('activePic')}`);
@@ -75,7 +82,7 @@ function NextHoliday() {
             }
         }
         clearInterval(IntervalID);
-        console.log('clear ' + IntervalID);
+        // console.log('clear ' + IntervalID);
         changePicAnimation();
     };
 
@@ -128,10 +135,60 @@ function NextHoliday() {
                             })}
                         </div>
                     </div>
+
+                    <div className={cx('countDown-block')}>
+                        <div className={cx('days', 'countdownElement')}>
+                            <h1>000</h1>
+                            <h3>Days</h3>
+                        </div>
+                        <div className={cx('hours', 'countdownElement')}>
+                            <h1>00</h1>
+                            <h3>Hours</h3>
+                        </div>
+                        <div className={cx('minutes', 'countdownElement')}>
+                            <h1>00</h1>
+                            <h3>Minutes</h3>
+                        </div>
+                        <div className={cx('seconds', 'countdownElement')}>
+                            <h1>00</h1>
+                            <h3>Seconds</h3>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div className={cx('nextHoliday-row2')}></div>
+            <div className={cx('nextHoliday-row2')}>
+                <div className={cx('world-tour', 'tours')}>
+                    <img src={world_tour} alt=""></img>
+                    <div className={cx('decription')}>
+                        <h3 className={cx('decription-title')}>World Tour</h3>
+                        <span className={cx('decription-content')}>
+                            Lorem ipsum dolor sit amet conse ctetur adip iscing elit Proin rhonc us urna dictum.
+                        </span>
+                        <Link to="\">View More</Link>
+                    </div>
+                </div>
+                <div className={cx('Cruises', 'tours')}>
+                    <img src={Cruises} alt=""></img>
+                    <div className={cx('decription')}>
+                        <h3 className={cx('decription-title')}>Cruises</h3>
+                        <span className={cx('decription-content')}>
+                            Lorem ipsum dolor sit amet conse ctetur adip iscing elit Proin rhonc us urna dictum.
+                        </span>
+                        <Link to="\">View More</Link>
+                    </div>
+                </div>
+                <div className={cx('Best Tours', 'tours')}>
+                    <img src={Best_Tours} alt=""></img>
+                    <div className={cx('decription')}>
+                        <h3 className={cx('decription-title')}>Best Tours</h3>
+                        <span className={cx('decription-content')}>
+                            Lorem ipsum dolor sit amet conse ctetur adip iscing elit Proin rhonc us urna dictum.
+                        </span>
+                        <Link to="\">View More</Link>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 }
