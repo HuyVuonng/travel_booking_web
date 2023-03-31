@@ -68,6 +68,17 @@
                 img {
                     width: 100%;
                     height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    animation: InvisiblePic 1s linear;
+                    animation-fill-mode: forwards;
+                }
+                .activePic {
+                    animation: visiblePic 1s linear;
+                    animation-fill-mode: forwards;
                 }
 
                 .change-pic-slide {
@@ -108,11 +119,19 @@
 .active-pic {
     animation: changepic 2s ease;
 }
-@keyframes changepic {
+@keyframes visiblePic {
     from {
         opacity: 0.5;
     }
     to {
         opacity: 1;
+    }
+}
+@keyframes InvisiblePic {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
     }
 }
