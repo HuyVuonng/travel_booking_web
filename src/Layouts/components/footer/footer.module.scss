@@ -1,0 +1,150 @@
+.footer-wrapper {
+    background-image: url(http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/parallax-7.jpg?id=1602);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+
+    .footer-content {
+        width: 1200px;
+        margin-bottom: 100px;
+
+        .footer-content-header {
+            display: flex;
+            column-gap: 150px;
+            // align-items: center;
+            justify-content: center;
+            padding: 80px 0 65px;
+
+            .text {
+                .small-text {
+                    color: #9a9a9a;
+                    font-size: 1.6rem;
+                    line-height: 14px;
+                    letter-spacing: 2px;
+                    font-weight: normal;
+                    text-transform: uppercase;
+                }
+
+                .large-text {
+                    font-size: 3.8rem;
+                    line-height: 36px;
+                    letter-spacing: 0px;
+                    font-weight: bold;
+                    color: #555555;
+                }
+            }
+
+            .input {
+                display: flex;
+                align-items: center;
+                column-gap: 15px;
+                .text-input {
+                    outline: none;
+                    width: 257px;
+                    height: 45px;
+                    font-size: 1.6rem;
+                    background-color: #f9f9f9;
+                    border-width: 1px;
+                    border-color: #f1f1f1;
+                    border-radius: 30px;
+                    border-style: solid;
+                    padding: 10px 20px;
+                    -webkit-appearance: none;
+                    color: #a3a3a3;
+                }
+                .text-submit {
+                    text-transform: uppercase;
+                    outline: none;
+                    font-size: 1.6rem;
+                    background-color: #14b9d5;
+                    border-width: 0px;
+                    border-color: #fff;
+                    border-radius: 30px;
+                    border-style: solid;
+                    padding: 10px 20px;
+                    -webkit-appearance: none;
+                    color: #ffffff;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .footer-infor {
+            background-color: white;
+            padding: 50px;
+
+            .footer-infor-row1 {
+                display: flex;
+
+                .footer-infor1 {
+                    width: 50%;
+                    display: flex;
+                    row-gap: 20px;
+                    flex-direction: column;
+                    .logoFooter {
+                        width: 150px;
+                    }
+
+                    .footer-paragrap {
+                        font-size: 1.6rem;
+                        line-height: 27px;
+                        color: #9a9a9a;
+                        letter-spacing: 1px;
+                    }
+
+                    .footer-icon {
+                        display: flex;
+                        column-gap: 15px;
+                        font-size: 2.2rem;
+                        color: #555555;
+                    }
+                }
+
+                .footer-infor2 {
+                    width: 50%;
+                    display: flex;
+                    justify-content: space-around;
+                    .columm {
+                        .footer-infor2-title {
+                            font-size: 1.6rem;
+                            text-transform: uppercase;
+                            line-height: 1.6rem;
+                            letter-spacing: 2px;
+                            font-weight: bold;
+                            color: #555555;
+                            margin-bottom: 30px;
+                        }
+
+                        .footer-infor2-list {
+                            list-style: none;
+
+                            .footer-infor2-list-item {
+                                color: #9a9a9a;
+                                font-size: 1.8rem;
+                                word-spacing: 10px;
+                                padding: 5px 0;
+
+                                .list-item-icon {
+                                    font-size: 1.3rem;
+                                    margin-right: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .footer-content-footer {
+            display: flex;
+            justify-content: space-between;
+            text-transform: uppercase;
+            background-color: #14b9d5;
+            padding: 20px 15px;
+            color: white;
+            font-size: 1.4rem;
+        }
+    }
+}

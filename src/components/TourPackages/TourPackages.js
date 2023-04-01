@@ -10,7 +10,16 @@ function TourPackages() {
     const colors = { yellow: '#ffd205', pink: '#f76570', pouper: '#ba71da' };
     return (
         <div className={cx('TourPackages-block')}>
-            <img src={Berlin} alt=""></img>
+            <div className={cx('img-container')}>
+                <img className={cx('TourPackages-img')} src={Berlin} alt=""></img>
+                <a href="\" style={{ backgroundColor: colors.yellow }}>
+                    <img
+                        className={cx('TourPackages-icon')}
+                        src="http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/arch.png"
+                        alt=""
+                    />
+                </a>
+            </div>
             <div className={cx('detination-block')}>
                 <div className={cx('TourPackages-destination')}>
                     <h1 className={cx('TourPackages-name')}>Berlin</h1>

@@ -10,6 +10,8 @@ import Cruises from './Cruises.png';
 import Berlin from './Berlin.jpg';
 import Hong_Kong from './Hong_Kong.jpg';
 import San_Francisco from './San_Francisco.jpg';
+import footer_background from './footer_background.jpg';
+import logoFooter from './logoFooter.png';
 
 export {
     cultural,
@@ -24,4 +26,6 @@ export {
     Berlin,
     Hong_Kong,
     San_Francisco,
+    footer_background,
+    logoFooter,
 };

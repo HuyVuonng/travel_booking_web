@@ -1,8 +1,28 @@
 .TourPackages-block {
     width: 370px;
-    img {
-        width: 370px;
-        height: 230px;
+
+    .img-container {
+        position: relative;
+        .TourPackages-img {
+            width: 370px;
+            height: 230px;
+        }
+        a {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            bottom: 0;
+            right: 20px;
+            transform: translateY(50%);
+            .TourPackages-icon {
+                width: 26px;
+                height: 26px;
+            }
+        }
     }
 
     .detination-block {
