@@ -63,6 +63,8 @@ function NextHoliday() {
         pic.classList.add(`${cx('activePic')}`);
         btnchangepic[0].classList.add(`${cx('active')}`);
         changePicAnimation();
+
+        return () => clearInterval(IntervalID);
     }, []);
 
     const Changepicture = (id) => {
