@@ -3,7 +3,7 @@ import styles from './footer.module.scss';
 import { logoFooter } from '~/components/images';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookSquare, faTwitter, faVimeoV, faYoutube } from '@fortawesome/free-brands-svg-icons';
-import { faAngleRight, faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
 
 const cx = classNames.bind(styles);
 function Footer() {
