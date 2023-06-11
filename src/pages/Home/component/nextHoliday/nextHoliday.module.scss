@@ -67,6 +67,9 @@
             .image-slide {
                 height: 410px;
                 position: relative;
+                // > div {
+                //     height: 100%;
+                // }
                 img {
                     width: 100%;
                     height: 100%;
@@ -115,6 +118,7 @@
             .countDown-block {
                 width: calc(100% / 3 * 2);
                 height: 115px;
+                z-index: 99;
                 background-color: #14b9d5;
                 position: absolute;
                 left: 50%;
@@ -216,3 +220,8 @@
         opacity: 0;
     }
 }
+// .pic {
+//     width: 100%;
+//     height: 100%;
+//     object-fit: cover;
+// }

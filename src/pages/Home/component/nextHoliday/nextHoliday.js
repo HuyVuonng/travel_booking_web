@@ -4,6 +4,8 @@ import { useEffect, useRef } from 'react';
 import { Best_Tours, Cruises, world_tour } from '~/components/images';
 import { Link } from 'react-router-dom';
 
+// import { Fade } from 'react-slideshow-image';
+// import GlobalStyle from '~/components/GlobalStyle/GlobalStyle';
 const cx = classNames.bind(styles);
 
 function NextHoliday() {
@@ -121,9 +123,12 @@ function NextHoliday() {
                 <div className={cx('nextHoliday-collum2')}>
                     <div className={cx('image-slide')}>
                         {/* <img className={cx('pic')} src={currentPic.link} alt="" /> */}
-                        {picture.map((img, index) => {
-                            return <img data-id={index} key={index} className={cx('pic')} src={img.link} alt="" />;
-                        })}
+                        {/* <Fade> */}
+                        {picture.map((img, index) => (
+                            <img data-id={index} key={index} className={cx('pic')} src={img.link} alt="" />
+                        ))}
+
+                        {/* </Fade> */}
                         <div className={cx('change-pic-slide')}>
                             {picture.map((img) => {
                                 return (

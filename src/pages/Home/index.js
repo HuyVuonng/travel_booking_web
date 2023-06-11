@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import classNames from 'classnames/bind';
 import { Link } from 'react-router-dom';
 import styles from './Home.module.scss';
-import { relax, cultural, history, sport } from '~/components/images';
+import { relax, cultural, history, sport, Berlin, San_Francisco } from '~/components/images';
 import ItemDestination from './component/ItemDestination';
 import NextHoliday from './component/nextHoliday';
 import TourPackages from '~/components/TourPackages/TourPackages';
@@ -139,9 +139,14 @@ function Home() {
                     </div>
 
                     <div className={cx('content4-item')}>
-                        <TourPackages />
-                        <TourPackages />
-                        <TourPackages />
+                        <TourPackages color="#ffd205" imgSrc={Berlin} />
+                        <TourPackages color="#ba71da" imgSrc={San_Francisco} />
+                        <TourPackages
+                            color="#f76570"
+                            imgSrc={
+                                'http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/package-3-1024x640.jpg'
+                            }
+                        />
                     </div>
                 </div>
             </div>

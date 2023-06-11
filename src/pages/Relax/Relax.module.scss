@@ -1,0 +1,11 @@
+.relax-wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: calc(316px - 104px);
+
+    .relax-content {
+        display: flex;
+        justify-content: space-between;
+        padding: 50px 0;
+    }
+}

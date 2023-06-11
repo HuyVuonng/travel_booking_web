@@ -1,5 +1,1 @@
-function Relax() {
-    return <div>Relax page</div>;
-}
-
-export default Relax;
+export { default } from './Relax';

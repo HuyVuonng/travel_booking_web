@@ -1,99 +1,103 @@
 .TourPackages-block {
     width: 370px;
 
-    .img-container {
-        position: relative;
-        .TourPackages-img {
-            width: 370px;
-            height: 230px;
-        }
-        a {
-            position: absolute;
-            width: 50px;
-            height: 50px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 50%;
-            bottom: 0;
-            right: 20px;
-            transform: translateY(50%);
-            .TourPackages-icon {
-                width: 26px;
-                height: 26px;
-            }
-        }
-    }
+    .TourPackages-link {
+        text-decoration: none;
 
-    .detination-block {
-        padding: 15px 30px;
-        border: 1px solid rgb(241, 241, 241);
-        .TourPackages-destination {
-            margin: 20px 0;
-            border-bottom: 1px solid rgb(241, 241, 241);
-            .TourPackages-name {
-                color: #555555;
-                font-size: 2.2rem;
-                font-weight: 700px;
-                margin-bottom: 10px;
+        .img-container {
+            position: relative;
+            .TourPackages-img {
+                width: 370px;
+                height: 230px;
             }
-            .TourPackages-location {
-                color: #9a9a9a;
-                font-size: 1.4rem;
-                margin-bottom: 20px;
+            a {
+                position: absolute;
+                width: 50px;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                bottom: 0;
+                right: 20px;
+                transform: translateY(50%);
+                .TourPackages-icon {
+                    width: 26px;
+                    height: 26px;
+                }
             }
         }
-        .TourPackages-type {
-            display: flex;
-            border-bottom: 1px solid rgb(241, 241, 241);
-            padding-bottom: 15px;
-            .type {
-                width: 145px;
-                font-size: 1.5rem;
-                letter-spacing: 2px;
-                text-transform: uppercase;
-                color: #555555;
-                font-weight: 400;
 
-                span {
-                    margin-left: 3px;
-                    font-size: 1.2rem;
-                    border-radius: 30px;
-                    padding: 2px 8px;
-                    color: white;
+        .detination-block {
+            padding: 15px 30px;
+            border: 1px solid rgb(241, 241, 241);
+            .TourPackages-destination {
+                margin: 20px 0;
+                border-bottom: 1px solid rgb(241, 241, 241);
+                .TourPackages-name {
+                    color: #555555;
+                    font-size: 2.2rem;
+                    font-weight: 700px;
+                    margin-bottom: 10px;
+                }
+                .TourPackages-location {
+                    color: #9a9a9a;
+                    font-size: 1.4rem;
+                    margin-bottom: 20px;
+                }
+            }
+            .TourPackages-type {
+                display: flex;
+                border-bottom: 1px solid rgb(241, 241, 241);
+                padding-bottom: 15px;
+                .type {
+                    width: 145px;
+                    font-size: 1.5rem;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+                    color: #555555;
+                    font-weight: 400;
+
+                    span {
+                        margin-left: 3px;
+                        font-size: 1.2rem;
+                        border-radius: 30px;
+                        padding: 2px 8px;
+                        color: white;
+                    }
+                }
+
+                .cost {
+                    color: #555555;
+                    font-size: 27px;
+                    font-weight: 400;
+                    letter-spacing: 1px;
+                    flex: 1;
+                    text-align: end;
                 }
             }
 
-            .cost {
-                color: #555555;
-                font-size: 27px;
-                font-weight: 400;
-                letter-spacing: 1px;
-                flex: 1;
-                text-align: end;
+            .TourPackages-decription {
+                margin-top: 20px;
+                margin-bottom: 20px;
+                .decription {
+                    color: #9a9a9a;
+                    font-size: 1.6rem;
+                    letter-spacing: 1px;
+                    line-height: 30px;
+                }
             }
-        }
 
-        .TourPackages-decription {
-            margin-top: 20px;
-            margin-bottom: 20px;
-            .decription {
-                color: #9a9a9a;
+            .TourPackages-link {
+                text-transform: uppercase;
+                display: inline-block;
+                text-decoration: none;
+                color: white;
                 font-size: 1.6rem;
                 letter-spacing: 1px;
-                line-height: 30px;
+                border-radius: 30px;
+                padding: 10px 25px;
             }
-        }
-
-        .TourPackages-link {
-            text-transform: uppercase;
-            display: inline-block;
-            text-decoration: none;
-            color: white;
-            font-size: 1.6rem;
-            letter-spacing: 1px;
-            border-radius: 30px;
-            padding: 10px 25px;
         }
     }
 }

@@ -2,7 +2,7 @@ import config from '~/config';
 
 //page
 import Home from '~/pages/Home';
-import Relax from '~/pages/Relax';
+import Relax from '~/pages/Relax/Relax';
 
 const publicRoutes = [
     { path: config.routes.home, component: Home },

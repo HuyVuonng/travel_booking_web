@@ -1,6 +1,7 @@
 import classNames from 'classnames/bind';
 import styles from './ItemDestination.module.scss';
 import { europe } from '~/components/images';
+import { Link } from 'react-router-dom';
 
 const cx = classNames.bind(styles);
 
@@ -17,19 +18,19 @@ function ItemDestination() {
 
             <div className={cx('ItemDestination-access')}>
                 <h3 className={cx('ItemDestination-access-title')}>Packages</h3>
-                <a className={cx('ItemDestination-access-link')} href="\">
+                <Link className={cx('ItemDestination-access-link')} to="/">
                     Berlin
-                </a>
-                <a href="\" className={cx('ItemDestination-access-link')}>
+                </Link>
+                <Link to="/" className={cx('ItemDestination-access-link')}>
                     Amsterdam
-                </a>
-                <a href="\" className={cx('ItemDestination-access-link')}>
+                </Link>
+                <Link to="/" className={cx('ItemDestination-access-link')}>
                     Tuscany
-                </a>
+                </Link>
 
-                <a href="\" className={cx('ItemDestination-access-link', 'btn-access')}>
+                <Link to="/" className={cx('ItemDestination-access-link', 'btn-access')}>
                     View destination
-                </a>
+                </Link>
             </div>
         </div>
     );
