@@ -28,7 +28,7 @@ function ItemDestination() {
                     Tuscany
                 </Link>
 
-                <Link to="/" className={cx('ItemDestination-access-link', 'btn-access')}>
+                <Link to="/viewdestination" className={cx('ItemDestination-access-link', 'btn-access')}>
                     View destination
                 </Link>
             </div>

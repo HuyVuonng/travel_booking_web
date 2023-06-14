@@ -8,6 +8,9 @@
     left: 0;
     right: 0;
 
+    + div {
+        margin-top: calc(316px - 104px);
+    }
     h1 {
         position: absolute;
         bottom: 20%;

@@ -3,11 +3,12 @@ import styles from './BackgroundBehindHeader.module.scss';
 
 const cx = classNames.bind(styles);
 
-function BackgroundBehindHeader({ img, title }) {
+function BackgroundBehindHeader({ img, title, ...props }) {
     return (
         <div
             className={cx('BackgroundBehindHeader-wrapper')}
             style={{
+                ...props,
                 backgroundImage: `url(${img})`,
             }}
         >
